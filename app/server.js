@@ -1,3 +1,5 @@
+require('dotenv').config();// todo only for devlopment not for production 
+
 const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
@@ -7,7 +9,7 @@ const helmet = require('helmet');
 const logger = require('./common/logger');
 const app = express();
 
-require('dotenv').config();// todo only for devlopment not for production 
+
 
 // secure headers
 app.use(helmet());
